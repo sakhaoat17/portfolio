@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddbb6917b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <img src="images/cover.png" class="logo">
+                <ul>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Portfolio</a></li>
+                    <li><a href='#'>Contact</a></li>
+                </ul>
+            </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, i am <span>Mahin</span> <br>from Bangladesh</h1>
+        </div>
+
+
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic1.jpg">
+                </div>
+                <div class="about-col-2">
+                <h1 class="subt">About Me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laborum accusantium reiciendis distinctio dignissimos perferendis delectus earum animi. Eius placeat, dolorem voluptatibus vel doloribus laboriosam illum soluta fuga perspiciatis nesciunt.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Educations</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subt">My Sevices</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam officia tenetur quo laudantium facere vitae possimus, molestias repellat numquam sequi rerum distinctio doloremque quaerat aperiam alias excepturi fugit. Dolorem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam officia tenetur quo laudantium facere vitae possimus, molestias repellat numquam sequi rerum distinctio doloremque quaerat aperiam alias excepturi fugit. Dolorem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam officia tenetur quo laudantium facere vitae possimus, molestias repellat numquam sequi rerum distinctio doloremque quaerat aperiam alias excepturi fugit. Dolorem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portpolio">
+          <div class="container">
+            <h1 class="subt">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis ducimus dolore, veniam reprehenderit quo inventore voluptatem perspiciatis pariatur itaque ab laboriosam, nobis quod dolores. Voluptate laudantium repellat facere architecto?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis ducimus dolore, veniam reprehenderit quo inventore voluptatem perspiciatis pariatur itaque ab laboriosam, nobis quod dolores. Voluptate laudantium repellat facere architecto?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis ducimus dolore, veniam reprehenderit quo inventore voluptatem perspiciatis pariatur itaque ab laboriosam, nobis quod dolores. Voluptate laudantium repellat facere architecto?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    
+</body>
+</html>
