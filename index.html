@@ -153,6 +153,8 @@
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
+                        <button type="submit" class="btn btn2" id="admin-button">Admin</button>
+                        
                     </form>
                     
                 </div>
@@ -179,7 +181,10 @@
     </script>
 
     <script>
-
+        document.getElementById("admin-button").onclick = function() {
+            window.location.href = "login.html";
+        };
+        
         var sidemenu=document.getElementById("sidemenu");
         function openmenu(){
             sidemenu.style.right="0";
@@ -188,6 +193,7 @@
             sidemenu.style.right="-200px";
         }
     </script>
+        
     
 </body>
 </html>
