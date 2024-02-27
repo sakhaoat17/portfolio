@@ -25,7 +25,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // User found, login successful
     // Redirect to admin.html
-    header("Location: admin.html");
+    header("Location: admin.php");
     exit; // Make sure to exit after the redirect to prevent further execution
 } else {
     // No user found with the provided credentials

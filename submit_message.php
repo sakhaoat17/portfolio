@@ -22,7 +22,10 @@ $message = $_POST['message'];
 $sql = "INSERT INTO messages (name, email, message) VALUES ('$name', '$email', '$message')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Message submitted successfully";
+    echo "<script>alert('Message submitted successfully');</script>";
+
+    header("Location: index.html?insertion=success");
+
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
