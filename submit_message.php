@@ -24,7 +24,7 @@ $sql = "INSERT INTO messages (name, email, message) VALUES ('$name', '$email', '
 if ($conn->query($sql) === TRUE) {
     echo "<script>alert('Message submitted successfully');</script>";
 
-    header("Location: index.html?insertion=success");
+    header("Location: index.php?insertion=success");
 
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;

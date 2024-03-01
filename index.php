@@ -40,7 +40,7 @@
                 </div>
                 <div class="about-col-2">
                 <h1 class="subt">About Me</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laborum accusantium reiciendis distinctio dignissimos perferendis delectus earum animi. Eius placeat, dolorem voluptatibus vel doloribus laboriosam illum soluta fuga perspiciatis nesciunt.</p>
+                <?php include 'about.php'; ?>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
