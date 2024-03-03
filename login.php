@@ -1,4 +1,16 @@
 <?php
+// Check if the cookie named "username" is set
+if (isset($_COOKIE['username'])) {
+    // Cookie exists, redirect to admin.php
+    $username = $_COOKIE['username'];
+    echo "Username cookie value: $username";
+    header("Location: admin.php");
+    exit; // Make sure to exit after the redirect to prevent further execution
+}
+else{
+    header("Location: login.html");
+}
+
 // Database connection parameters
 $hostname = 'localhost:3306';
 $username = 'root';
@@ -24,7 +36,10 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // User found, login successful
-    // Redirect to admin.html
+    // Set a cookie to remember the user's login state
+    setcookie("username", $username, time() + (120), "/"); // Cookie set to expire in 30 days
+
+    // Redirect to admin.php
     header("Location: admin.php");
     exit; // Make sure to exit after the redirect to prevent further execution
 } else {
@@ -32,6 +47,5 @@ if ($result->num_rows > 0) {
     echo "Invalid username or password.";
 }
 
-
 $conn->close();
-?>
+

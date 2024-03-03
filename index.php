@@ -62,9 +62,9 @@
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>web app Development</li>
-                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                        <li><span>KUET</span><br>Computer Science and Enigineering</li>
+                        <li><span>Notre Dame College</span><br>Higher Scecondary Certificate</li>
+                        <li><span>Raipur Merchants Academy</span><br>Secondary School Certifiate</li>
                     </ul>
                 </div>
                 </div>
@@ -79,19 +79,19 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam officia tenetur quo laudantium facere vitae possimus, molestias repellat numquam sequi rerum distinctio doloremque quaerat aperiam alias excepturi fugit. Dolorem.</p>
+                    <p>Craft visually stunning and user-friendly websites that captivate your audience and elevate your brand. Our web design services combine creativity, functionality, and responsiveness to deliver seamless digital experiences across all devices.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam officia tenetur quo laudantium facere vitae possimus, molestias repellat numquam sequi rerum distinctio doloremque quaerat aperiam alias excepturi fugit. Dolorem.</p>
+                    <p>Create intuitive and visually appealing user interfaces that enhance user satisfaction and engagement. Our UX/UI design services focus on user research, usability testing, and creative design techniques to deliver exceptional digital experiences that align with your brand and resonate with your target audience.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam officia tenetur quo laudantium facere vitae possimus, molestias repellat numquam sequi rerum distinctio doloremque quaerat aperiam alias excepturi fugit. Dolorem.</p>
+                    <p>Design captivating mobile applications that deliver seamless and engaging user experiences. Our app design services combine user-centric design principles, innovative features, and elegant aesthetics to create intuitive and memorable mobile interfaces that drive user adoption and retention.</p>
                     <a href="#">Learn more</a>
                 </div>
 
@@ -107,7 +107,7 @@
                     <img src="images/work-1.png">
                     <div class="layer">
                         <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis ducimus dolore, veniam reprehenderit quo inventore voluptatem perspiciatis pariatur itaque ab laboriosam, nobis quod dolores. Voluptate laudantium repellat facere architecto?</p>
+                        <p>The MelodyMaster music player app project offers an exciting opportunity to develop a feature-rich and user-friendly mobile application for music enthusiasts. By implementing the key features outlined above and leveraging modern technologies and design principles, the app aims to provide users with an enjoyable and immersive music listening experience on their mobile devices.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                     <img src="images/work-2.png">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis ducimus dolore, veniam reprehenderit quo inventore voluptatem perspiciatis pariatur itaque ab laboriosam, nobis quod dolores. Voluptate laudantium repellat facere architecto?</p>
+                        <p>ConnectHub is a social media application designed to connect people, share content, and build communities. The app aims to provide users with a platform to interact with friends, discover new content, and engage with various communities based on their interests.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     <img src="images/work-3.png">
                     <div class="layer">
                         <h3>Online shopping App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis ducimus dolore, veniam reprehenderit quo inventore voluptatem perspiciatis pariatur itaque ab laboriosam, nobis quod dolores. Voluptate laudantium repellat facere architecto?</p>
+                        <p>ShopSmart is a mobile shopping application designed to provide users with a convenient and personalized shopping experience. The app aims to offer a wide range of products from various retailers, streamline the purchasing process, and enhance user satisfaction through advanced features and functionalities.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
 
     <script>
         document.getElementById("admin-button").onclick = function() {
-            window.location.href = "login.html";
+            window.location.href = "login.php";
         };
         
         var sidemenu=document.getElementById("sidemenu");

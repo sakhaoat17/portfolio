@@ -13,14 +13,14 @@
     </div>
     <ul>
       <li><a href="#home">messages</a></li>
-      <li><a href="#about">About me</a></li>
+      <li><a href="#about">Update</a></li>
       <li><a href="index.php">portfolio</a></li>
       <li><a href="#"></a></li>
     </ul>
   </nav>
   <section id="home">
   <div class="table-container">
-        <h2>Data Entries</h2>
+        <h2>Messages:</h2>
         <table>
             <tr>
                 <th>Name</th>
@@ -35,13 +35,9 @@
   <section id="about">
   <div class="table_content">
         <h2>About ME</h2>
-        <table class="full-width">
-            <tr>
-                <th>Content</th>
-                <th>Action</th>
-            </tr>
+        
             <?php include 'get_content.php'; ?>
-        </table>
+        
     </div>
 
 

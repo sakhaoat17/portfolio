@@ -62,6 +62,20 @@ section {
     background-size: cover;
     background-position: center;
 }
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items (div) at the top */
+    /* Add other styling as needed */
+}
+
+.table_content {
+    width: 100%;
+    max-width: 800px; /* Example maximum width */
+    padding: 20px;
+    /* Add other styling as needed */
+}
+
 .table-container {
     position: absolute;
     top: 50px; /* Adjust this value to match the height of your navigation bar */
@@ -70,10 +84,6 @@ section {
     padding: 20px;
     z-index: 999; /* Ensure the table container is on top of other elements */
 }
-.full-width{
-    width:100%;
-}
-
 
 table {
     border-collapse: collapse;
@@ -85,6 +95,22 @@ th, td {
     text-align: left;
     word-wrap: break-word;
 }
+th:first-child,
+    td:first-child {
+        width: 25%; /* Adjust this value to your preference */
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 25%; /* Adjust this value to your preference */
+    }
+    th:nth-child(3),
+    td:nth-child(3) {
+        width: 25%; /* Adjust this value to your preference */
+    }
+    th:nth-child(4),
+    td:nth-child(4) {
+        width: 25%; /* Adjust this value to your preference */
+    }
 
 th {
     background-color: #f2f2f2;
