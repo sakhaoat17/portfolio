@@ -1,42 +1,42 @@
 <?php
-// Check if the form is submitted
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Connect to your database
+    
     $conn = mysqli_connect("localhost", "root", "", "portfolio");
 
-    // Check connection
+    
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    // Retrieve the updated content and sanitize it
+    
     $updatedContent = mysqli_real_escape_string($conn, $_POST['updated_content']);
     $id = $_POST['id'];
 
-    // Perform the update query
+    
     $sql = "UPDATE about_content SET content='$updatedContent' WHERE id='$id'";
     if (mysqli_query($conn, $sql)) {
-        // Redirect to admin.php after successful update
+        
         header("location: admin.php");
-        exit; // Exit after redirection
+        exit; 
     } else {
         echo "Error updating content: " . mysqli_error($conn);
     }
 
-    // Close connection
+    
     mysqli_close($conn);
 }
 
-// Fetch the content to be updated
+
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    // Connect to the database
+    
     $conn = mysqli_connect("localhost", "root", "", "portfolio");
-    // Check connection
+    
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    // Fetch the content based on the provided id
+    
     $sql = "SELECT content FROM about_content WHERE id='$id'";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
     } else {
         echo "No data found";
     }
-    // Close connection
+    
     mysqli_close($conn);
 }
 ?>

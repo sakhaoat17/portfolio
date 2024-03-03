@@ -1,8 +1,8 @@
 <?php
-// Connect to your database
+
 $conn = mysqli_connect("localhost", "root", "", "portfolio");
 
-// Check connection
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -23,12 +23,12 @@ if (!$conn) {
     </tr>
 
     <?php
-    // Fetch data from the database
+    
     $sql = "SELECT id, content FROM about_content";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {
-        // Output data of each row
+        
         while($row = mysqli_fetch_assoc($result)) {
             echo "<tr>";
             echo "<td style='width: 80%;'>" . $row["content"] . "</td>";

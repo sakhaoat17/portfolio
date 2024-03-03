@@ -1,18 +1,18 @@
 <?php
-// Connect to your database
+
 $conn = mysqli_connect("localhost:3306", "root", "", "portfolio");
 
-// Check connection
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Fetch data from the database
+
 $sql = "SELECT * FROM messages";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
-    // Output data of each row
+    
     while($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
     echo "<td style='width: 25%;'>" . $row["name"] . "</td>";
